@@ -1,4 +1,4 @@
-package jp.dip.hmy2001.mcpeProxy;
+package jp.dip.hmy2001.mcpeProxy.network;
 
 import java.net.DatagramPacket;
 import java.net.InetAddress;

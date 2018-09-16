@@ -1,6 +1,6 @@
 package jp.dip.hmy2001.mcpeProxy.utils;
 
-import jp.dip.hmy2001.mcpeProxy.Main;
+import jp.dip.hmy2001.mcpeProxy.ProxyMain;
 import jline.console.*;
 import java.io.IOException;
 
@@ -35,7 +35,7 @@ public class CommandReader extends Thread{
         try {
             while (isRunning){
                 if ((line = reader.readLine()) != null) {
-                    Main.getInstance().onCommand(line);
+                    ProxyMain.getInstance().onCommand(line);
                 }
             }
         } catch (IOException e) {

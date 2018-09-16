@@ -21,7 +21,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>jp.dip.hmy2001.mcpeProxy.Main</mainClass>
+                            <mainClass>jp.dip.hmy2001.mcpeProxy.ProxyMain</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

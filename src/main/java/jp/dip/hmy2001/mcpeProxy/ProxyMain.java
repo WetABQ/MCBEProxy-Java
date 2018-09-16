@@ -1,26 +1,27 @@
 package jp.dip.hmy2001.mcpeProxy;
 
+import jp.dip.hmy2001.mcpeProxy.network.SessionManager;
 import jp.dip.hmy2001.mcpeProxy.utils.*;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-public class Main {
-    private static Main instance = null;
+public class ProxyMain {
+    private static ProxyMain instance = null;
     private Config config;
     private final CommandReader console;
     private final SessionManager sessionManager;
-    private static final Log logger = LogFactory.getLog("Main Logger");
+    private static final Log logger = LogFactory.getLog("ProxyMain Logger");
 
     public static void main(String args[]){
-        new Main();
+        new ProxyMain();
     }
 
-    public static Main getInstance(){
+    public static ProxyMain getInstance(){
         return instance;
     }
 
-    public Main(){
+    public ProxyMain(){
         instance = this;
 
         this.console = new CommandReader();
